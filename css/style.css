@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+a{text-decoration: none;color: black;}
+.links a{margin-left: 1vw;}
+nav{
+    display: flex;
+    background-color: #ffa5ab;
+    justify-content: space-around;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    border-bottom: 1px solid black;
+}
+/*base sprite css*/
+.icon{
+    background: url(../images/sprite3.png);
+    background-repeat: no-repeat;
+    width: 66px;
+    height: 66px;
+    display: inline-block;
+}
+/*individual sprite positions*/
+#facebook{background-position: -439px -146px;}
+#twitter{background-position:  -66px -72px;}
+#instagram{background-position: -290px -221px;}
+#gmail{background-position:  -365px -221px;}
+#pinterest{background-position: -141px -221px;}
+
+/** 720 landscape screen **/
+@media screen and (max-width:720px){
+    nav{
+        background-color: #ffa5ab;
+    }
+}
+/** Square Tablets **/
+@media screen and (max-width:640px){
+    nav{
+        background-color: #ffa5ab;
+    }
+}
+/** Some Tablets **/
+@media screen and (max-width:600px){
+    nav{
+        background-color:  #ffa5ab;
+    }
+}
+/** Fully Mobile **/
+@media screen and (max-width:480px){
+    nav{
+        background-color:  #ffa5ab;
+    }
+}
+@media screen and (max-width: 600px){
+    nav{
+        position: relative;
+        background-color:  #ffa5ab;
+    } 
+    .pagetitle{
+        background-color:  #ffa5ab;
+        padding: 1vw;
+        transition: .5s;
+    }
+    .links{
+        display: none;
+        z-index: 1; 
+        position: absolute;
+        background-color: #da627d;
+        min-width: 100vw;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0, 2);
+        transition: .5s;
+    }
+    .links a{
+        color: #ffffff;
+        padding-top: 1vh;
+        display: block;
+        transition: .5s;
+        margin-left: 0;
+        padding-left: 1vh;
+    }
+.links a:hover{background-color:  #f9dbbd; transition: .5s;}
+nav:hover .links{ display: block; transition: .5s;}
+nav:hover .pagetitle{background-color:  #ffa5ab; transition: 0.5s;}
+}
+#sitename{padding-top: 1vw;
+padding-bottom: 1vw;}
+.navlinks{
+    text-decoration: none;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+section{
+    display: flex;
+    height: 85vh;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
